@@ -114,7 +114,7 @@ Array.remove = function (arg,obj,prop) {
 	obj[prop]=obj[prop].filter(x=>arg!=x);
 }
 
-var port =8080;
+var port =process.env.PORT || 5000;
 
 
 var server = net.createServer(function (s) {
