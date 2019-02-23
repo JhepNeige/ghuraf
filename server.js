@@ -114,6 +114,7 @@ Array.remove = function (arg,obj,prop) {
 	obj[prop]=obj[prop].filter(x=>arg!=x);
 }
 
+var port =process.env.PORT || 5000
 
 
 var server = net.createServer(function (s) {
@@ -242,6 +243,6 @@ console.log(">>>",data);
 	} ;
 	s.on('close',end);
 	s.on('error',end);
-}).listen(5000,"127.0.0.1");
-console.log("online");
+}).listen(port);
+console.log("online",port);
 
