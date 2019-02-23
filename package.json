@@ -1,0 +1,25 @@
+{
+  "name": "ghuraf",
+  "version": "0.1",
+  "description": "Jhep's room service",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "net": "6.2.0"
+  },
+  "engines": {
+    "node": "10.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/ghuraf.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "net"
+  ],
+  "license": "MIT"
+}
