@@ -171,7 +171,7 @@ console.log(">>>",data);
 			break;
 		  case "make_room":
 		    if (!obj.name) {s.msg('sys','err',{desc:"Err: Room name?"}); return -1;}
-			if (!obj.icon) {s.msg('sys','err',{desc:"Err: Room icon?"}); return -1;}
+			// if (!obj.icon) {s.msg('sys','err',{desc:"Err: Room icon?"}); return -1;}
 			if (s.myroom) { s.msg('sys','err',{desc:"Err: Already got a room"}); return -1; }
 			let rid=getkey();
 			r=rooms[rid]={'id':rid,'name':obj.name,'icon':obj.icon,p:[al],'owner':al}; //TODO make a class
