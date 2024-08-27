@@ -4,7 +4,7 @@ const net = require('net');
 //websockmini
 function wsm_handshake(s, data) {
 	try {
-		var secWsKey = String(data).match(/Sec-WebSocket-Key: (.+)\r\n/)[1];
+		var secWsKey = String(data).match(/Sec-Web[sS]ocket-Key: (.+)\r\n/)[1];
 	}catch(e){
 		s.flag=2;
 		return 1;
